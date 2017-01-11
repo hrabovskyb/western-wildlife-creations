@@ -19,15 +19,19 @@
 <body>
 	<div class="header">
 		<div class="page-topper">
-			<a href="tel: +(307) 778-2051">(307) 778-2051</a>
+			<!-- Use any element to open the sidenav -->
+			<div onclick="openNav()" ><img src="Media/menu-icon.png" id="menu-btn"></div>
+			<a href="tel: +(307) 778-2051" id="phone-number">&#9743; (307) 778-2051</a>
 		</div>
 		<div class="logo-heading">
 			<div id="discount">
-				<p>10% Off</p>
-				<p>Military and Veterans</p>
+				<span id="discount-span">
+					<p>10% Off</p>
+					<p>Military and Veterans</p>
+				</span>
 			</div>
 			<div class="logo">
-				<img src="Media/center-logo.png">
+				<a href="#"><img src="Media/center-logo.png"></a>
 			</div>
 			<div id="call-now">
 				<p>Call Now To Preserve</p>
@@ -36,6 +40,33 @@
 			</div>
 			
 		</div>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a class="active-mobile" href="#">Home</a>
+			<a href="#" class="hvr-underline-from-center">Big Game</a>
+			<a href="#" class="hvr-underline-from-center">Small Game</a>
+			<a href="#" class="hvr-underline-from-center">Upland Game Birds</a>
+			<a href="#" class="hvr-underline-from-center">Waterfowl</a>
+			<a href="#" class="hvr-underline-from-center">Reptiles and Fish</a>
+			<a href="#" class="hvr-underline-from-center">Reviews</a>
+			<a href="#" class="hvr-underline-from-center">Contact Us</a>
+		</div>
+
+		<script>
+			/* Set the width of the side navigation to 250px */
+			function openNav() {
+			    document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			/* Set the width of the side navigation to 0 */
+			function closeNav() {
+			    document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+
+
+
 		<div class="navbar">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Home</a></li>
@@ -50,6 +81,32 @@
 			
 		</div>
 	</div>
+	<div class="content-wrapper">
+		<div class="highlight-slides">
+			<div class="cycle-slideshow" data-cycle-timeout="5000" data-cycle-prev="#prev-slide" data-cycle-next="#next-slide" data-cycle-loader="wait" data-cycle-slides="> div" data-cycle-pager="#pager">
+
+				<div class="slide-content">
+					<div class="slide-content-wrapper">
+						<div class="slide-text">
+							<h2>Wildlife Artistry by David Hrabovsky</h2>
+							<a href="#" class="hvr-fade"><h4>Big Game</h4></a>
+						</div>
+						<img src="Media/dlwildlife.png">
+					</div>
+				</div>
+				<div class="slide-content">
+					<img src="Media/dl-1.jpg">
+				</div>
+
+			</div>
+			
+			<div class="center" id="slide-control">
+				<a href="#" id="prev-slide"><img src="Media/previous.png"></a>
+				<div id="pager"></div>
+				<a href="#" id="next-slide"><img src="Media/next.png"></a>
+			</div>
+		</div>
+	<div>
 </body>
 
 </html>
