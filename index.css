@@ -1,0 +1,79 @@
+body{
+	background-image: url('Media/background-img.jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.page-topper{
+	width: 80%;
+	margin: auto;
+	padding: 1%;
+}
+.logo-heading{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	position: relative;
+}
+.logo-heading p{
+	font-weight: bold;
+	margin: 0px;
+}
+#discount{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	width: 20%;
+	position: relative;
+	top: 10px;
+}
+#call-now{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	width: 20%;
+	position: relative;
+	top: 10px;
+}
+.logo{
+	display: inline-block;
+	width: 40%;
+}
+.logo img{
+	width: 100%;
+}
+.navbar{
+	width: 100%;
+	padding: 1%;
+	text-align: center;
+	display: inline-block;
+	float: none;
+}
+.navbar-nav{
+	display: inline-block;
+	float: none;
+}
+.navbar-nav li{
+	margin-left: 2px;
+}
+.navbar-nav li a{
+	padding-bottom: 10px;
+}
+.navbar-nav .active{
+	border-bottom: 4px solid #520003;
+}
+.navbar-nav .active a{
+	padding-bottom: 6px;
+}
+.navbar-nav > li > a:hover{
+	background-color: transparent;
+	color: white;
+}
+.hvr-underline-from-center:before{
+	background-color: #520003;
+}
