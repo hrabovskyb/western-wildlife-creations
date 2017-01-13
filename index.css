@@ -143,130 +143,8 @@ a:hover{
 	margin-top: 5px;
 }
 
-.highlight-slides{
-	width: 100%;
-}
-.slide-content-wrapper{
-	position: relative;
-	width: 100%;
-}
-.slide-content-wrapper img{
-	
-}
-.slide-content-wrapper h2{
-	margin-top:25%;
-	margin-bottom: 3%;
-	color: white;
-	font-size: 36pt;
-	font-weight: bold; 
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-.slide-content-wrapper h4{
-	width: 100%;
-	margin: auto;
-	color: white;
-	font-size: 24pt;
-	font-weight: bold;
-	border-top: 2px solid #520003;
-	border-bottom: 2px solid #520003;
-	padding-top: 4px;
-	padding-bottom: 4px;
-}
-.slide-content-wrapper h4:hover{
-	border: 2px solid transparent;
-
-}
 .content-wrapper img{
 	width: 100%;
-}
-.slide-text{
-	position: absolute;
-	width: 100%;
-	text-align:center;
-}
-#pager span{
-	font-size: 24px;
-	margin: 5px;
-}
-#pager{
-	text-align: center;
-	display: table-cell;
-}
-.cycle-pager-active{
-	color: #520003;
-}
-#slide-control img{
-	width: 24px;
-}
-#slide-control a{
-	display: table-cell;
-	padding: 0px;
-}
-#slide-control a:last-child{
-	text-align: right;
-}
-#slide-control {
-	display: table;
-	width: 90%;
-	margin: auto;
-	table-layout: fixed;
-}
-
-.page-thumbnails{
-	background-color: rgba(255,255,255,.4);
-	display: table;
-	table-layout: fixed;
-	width: 100%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-}
-.thumb{
-	display: table-cell;
-	vertical-align: top;
-	position: relative;
-}
-.thumb img{
-	width: 100%;
-	padding: 1%;
-}
-.tint:before{
-	cursor: pointer;
-	content: "";
-	display: block;
-	position: absolute;
-	background:rgba(0,0,0,.1);
-	transition: all .3s linear;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-.tint:hover:before{
-	cursor: pointer;
-	content: "";
-	display: block;
-	position: absolute;
-	background:rgba(0,0,0,.5);
-	transition: all .3s linear;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
-.thumb-text{
-	z-index: 5;
-	position: absolute;
-	width: 100%;
-	text-align: center;
-	bottom: 5px;
-	color: white;
-	font-weight: bold;
-	font-size: 24px;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-.thumb-text:hover{
-	cursor: pointer;
 }
 
 #content-heading h2{
@@ -350,7 +228,19 @@ a:hover{
 	width: 100%;
 }
 
-
+footer{
+	background-color: rgb(145,145,145);
+}
+.footer-body{
+	padding: 1%;
+	color: #520003;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+}
+.footer-body p{
+	margin: 0px;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -385,14 +275,6 @@ a:hover{
 	.content-wrapper{
 		width: 100%;
 	}
-	.slide-content-wrapper h2{
-		margin-top: 20%;
-		font-size: 30px;
-	}
-	.slide-content-wrapper h4{
-		margin-top: 5%;
-		font-size: 18px;
-	}
 }
 @media(max-width: 600px){
 	body{
@@ -414,22 +296,6 @@ a:hover{
 }
 @media (max-width: 550px){
 	
-	.slide-content-wrapper h2{
-		margin-top: 15%;
-		font-size: 24px;
-	}
-	.page-thumbnails{
-		margin: auto;
-		text-align: center;
-		width: 65%;
-	}
-	.thumb{
-		display: inline-block;
-		width: 98%;
-	}
-	.thumb-text{
-		font-size: 32px;
-	}
 	#award-left{
 		display: block;
 		width: 65%;
