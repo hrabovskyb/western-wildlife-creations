@@ -97,9 +97,6 @@ a:hover{
 .hvr-underline-from-center:before{
 	background-color: #520003;
 }
-.hvr-fade:hover{
-	background-color: #520003;
-}
 
 /* The side navigation menu */
 .sidenav {

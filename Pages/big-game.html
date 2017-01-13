@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Western Wildlife Creations | Home</title>
+
+    <meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../Hover-master/css/hover.css" media="all">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../Styles/big-game.css">
+    <link rel="shortcut icon" href="../Media/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../Media/favicon.ico" type="image/x-icon">
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="../fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="../fancybox/source/jquery.fancybox.pack.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../cycle2.js"></script>
+    <script src="../cycle2_center.js"></script>
+    <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="page-topper">
+			<!-- Use any element to open the sidenav -->
+			<div onclick="openNav()" ><img src="../Media/menu-icon.png" id="menu-btn"></div>
+			<a href="tel: +(307) 778-2051" id="phone-number">&#9743; (307) 778-2051</a>
+		</div>
+		<div class="logo-heading">
+			<div class="logo">
+				<a href="#"><img src="../Media/center-logo.png"></a>
+			</div>
+		</div>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="../index.html" class="hvr-underline-from-center">Home</a>
+			<a href="#" class="active-mobile">Big Game</a>
+			<a href="small-game.html" class="hvr-underline-from-center">Small Game</a>
+			<a href="upland-game-birds.html" class="hvr-underline-from-center">Upland Game Birds</a>
+			<a href="waterfowl.html" class="hvr-underline-from-center">Waterfowl</a>
+			<a href="reptiles-fish.html" class="hvr-underline-from-center">Reptiles and Fish</a>
+			<a href="reviews.html" class="hvr-underline-from-center">Reviews</a>
+			<a href="contact-us.html" class="hvr-underline-from-center">Contact Us</a>
+		</div>
+
+		<script>
+			/* Set the width of the side navigation to 250px */
+			function openNav() {
+			    document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			/* Set the width of the side navigation to 0 */
+			function closeNav() {
+			    document.getElementById("mySidenav").style.width = "0";
+			}
+
+		</script>
+
+
+
+		<div class="navbar">
+			<ul class="nav navbar-nav">
+				<li><a href="../index.html" class="hvr-underline-from-center">Home</a></li>
+				<li class="active"><a href="#">Big Game</a></li>
+				<li><a href="small-game.html" class="hvr-underline-from-center">Small Game</a></li>
+				<li><a href="upland-game-birds.html" class="hvr-underline-from-center">Upland Game Birds</a></li>
+				<li><a href="waterfowl.html" class="hvr-underline-from-center">Waterfowl</a></li>
+				<li><a href="reptiles-fish.html" class="hvr-underline-from-center">Reptiles and Fish</a></li>
+				<li><a href="reviews.html" class="hvr-underline-from-center">Reviews</a></li>
+				<li><a href="contact-us.html" class="hvr-underline-from-center">Contact Us</a></li>
+			</ul>
+			
+		</div>
+	</div>
+
+	<div class="content-wrapper">
+		<div id="content-heading">
+			<h2>Big Game</h2>
+		</div>
+		<div class="image-thumbs">
+			<img data-toggle="modal" data-target="#myModal" src="../Media/big-game-1.jpg" alt="Big Game 1">
+			<img data-toggle="modal" data-target="#myModal" src="../Media/big-game-2.jpg">
+			<img data-toggle="modal" data-target="#myModal" src="../Media/big-game-3.jpg">
+			<img data-toggle="modal" data-target="#myModal" src="../Media/big-game-4.jpg">
+			<img data-toggle="modal" data-target="#myModal" src="../Media/big-game-5.jpg">
+			<img data-toggle="modal" data-target="#myModal" src="../Media/big-game-6.jpg">
+			<img data-toggle="modal" data-target="#myModal" src="../Media/big-game-7.jpg">
+			<img data-toggle="modal" data-target="#myModal" src="../Media/big-game-8.jpg">
+			<img data-toggle="modal" data-target="#myModal" src="../Media/big-game-9.jpg">
+			
+		</div>
+
+	</div>
+	<div id="myModal" class="modal fade" role="dialog">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-body">
+	                <img class="img-responsive" src="" />
+	            </div>
+	            <div class="modal-footer">
+	                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+		    $('img').on('click', function () {
+		        var image = $(this).attr('src');
+		        $('#myModal').on('show.bs.modal', function () {
+		            $(".img-responsive").attr("src", image);
+		        });
+		    });
+		});
+
+	</script>
+</body>
+</html>
