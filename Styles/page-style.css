@@ -45,7 +45,7 @@
 	width: 60%;
 }
 img.mfp-img{
-	width: 60%;
+	width: auto;
 }
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close{
 	cursor: pointer;
