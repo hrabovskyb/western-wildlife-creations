@@ -1,0 +1,150 @@
+.content-wrapper{
+
+}
+.contact{
+	text-align: left;
+	position: relative;
+}
+#contact-text{
+	width: 40%;
+	margin: 0px;
+	padding-bottom: 10%;
+}
+#map{
+	padding: 0px;
+	margin: 0px;
+	width: 55%;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	display: inline-block;
+}
+#map iframe{
+	height: 100%;
+}
+form{
+	width: 100%;
+	padding-bottom: 20px;
+	margin:0 auto;
+	color: black;
+	position: relative;
+}
+#place-holder{
+	visibility: hidden;
+}
+#info-div{
+	width: 40%;
+	display: inline-block;
+	float: left;
+}
+#message-div{
+	width: 50%;
+	display: inline-block;
+}
+
+.btn{
+	float: right;
+	margin-right: 5%;
+}
+#fields{
+	margin-bottom: 3%;
+	margin-left: 2%;
+}
+fieldset h1{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: left;
+	padding-bottom: 2%;
+}
+.input-div{
+	display: inline-block;
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.input-div label{
+	float: left;
+	display: inline-block;
+	width: 65px;
+	font-size: 16px;
+}
+.input-div input{
+	display: inline-block;
+	float: left;
+	width: 60%;
+}
+label{
+	display: block;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	text-align: left;
+}
+input{
+	width: 40%;
+	display: inline-block;
+}
+textarea{
+	width: 100%;
+	padding-bottom: 50px;
+}
+.btn{
+	color:#000;
+	font-weight: bold;
+	width: 100px;
+}
+.btn:hover{
+	transition-property: background-color color;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-out;
+	background-color: #520003;
+	color:#fff;
+}
+
+.redirect{
+	padding-bottom: 20px;
+}
+.report{
+	padding-top: 20px;
+}
+.submission_container{
+	padding-left: 20%;
+}
+::-webkit-input-placeholder{
+	font-style: italic;
+}
+
+.connect{
+	background-color: #efefef;
+	border-top: none;
+	padding-top: none;
+}
+
+.connect .container{
+	padding-top: 0px;
+}
+
+@media (max-width: 600px){
+	form{
+		display: block;
+		position: initial;
+	}
+	#map {
+		width: 100%;
+		position: inherit;
+		height: 250px;
+	}
+	#contact-text{
+		width: 100%;
+	}
+	#info-div{
+		width: 90%;
+		display: inline-block;
+		float: left;
+	}
+	#message-div{
+		width: 90%;
+		display: inline-block;
+		float: left;
+	}
+}
