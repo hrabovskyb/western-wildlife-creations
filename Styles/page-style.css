@@ -22,20 +22,7 @@
 	cursor: pointer;
 }
 
-#myModal{
-	z-index: 1500;
-}
-#myModal img{
-	margin: auto;
-	padding: 1%;
-	background-color: #ccc;
-	border-radius: 5px;
-}
-.modal-dialog{
-	width: 50%;
-	margin: auto;
-	margin-top: 20px;
-}
+
 
 .img-responsive{
 	width: 60% !important;
@@ -50,6 +37,14 @@ img.mfp-img{
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close{
 	cursor: pointer;
 }
+.mfp-bg{
+	position: fixed !important;
+	height: 100% !important;
+}
+.mfp-wrap{
+	position: relative !important;
+}
+
 
 @media(max-width: 950px){
 	.logo{

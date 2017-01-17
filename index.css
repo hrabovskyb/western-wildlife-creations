@@ -1,5 +1,7 @@
 
+
 body{
+	width: 100%;
 	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('Media/elk_scaled.jpg');
 	background-size: 100%;
 	background-position: center top;
@@ -138,7 +140,7 @@ a:hover{
 
 .content-wrapper{
 	background-color: rgba(255,255,255,.4);
-	width: 70%;
+	width: 60%;
 	margin: auto;
 	margin-top: 5px;
 }
@@ -293,25 +295,13 @@ footer{
 	}
 }
 @media(min-width: 1920px){
-	.navbar-nav li a{
-		font-size: 26px;
-	}
+
 	#content-heading h2{
 		font-size: 48px;
 	}
-	.awards p{
-		font-size: 30px;
-	}
-	.contact{
-		height: 600px;
-		font-size: 30px;
-	}
-	#map{
-		height: 100%;
-	}
-	iframe{
-		height: 100%;
-	}
+
+
+
 }
 @media (max-width: 950px){
 	#menu-btn{
