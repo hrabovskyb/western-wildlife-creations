@@ -1,6 +1,6 @@
 
 body{
-	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('Media/elk.jpg');
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('Media/elk_scaled.jpg');
 	background-size: 100%;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -138,7 +138,7 @@ a:hover{
 
 .content-wrapper{
 	background-color: rgba(255,255,255,.4);
-	width: 800px;
+	width: 70%;
 	margin: auto;
 	margin-top: 5px;
 }
@@ -163,27 +163,58 @@ a:hover{
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
+.awards img{
+	padding: 1%;
+	background-color: #ccc;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px 5px black;
+	margin-bottom: 8px;
+}
 .awards p{
 	font-weight: bold;
 	color: #520003;
+	font-size: 14px;
 }
 #award-left{
 	display: inline-block;
-	width: 45%;
+	width: 44%;
 	vertical-align: top;
 	text-align: left;
-	font-size: 13px;
-	margin-right: 5%;
+	margin-right: 3%;
 }
 #award-left img{
 	width: 100%;
 }
 #award-right{
 	display: inline-block;
-	width: 35%;
-	margin-left: 5%;
+	width: 44%;
+	vertical-align: top;
 	text-align: left;
-	font-size: 12px;
+	margin-left: 3%;
+}
+#award-right img{
+	width: 100%;
+}
+#award-bottom{
+	width: 95%;
+	margin: auto;
+	margin-top: 1%;
+	text-align: center;
+}
+#award-bottom p{
+	text-align: left;
+}
+#bottom-left{
+	width: 44%;
+	display: inline-block;
+	margin-right: 3%;
+	vertical-align: top;
+}
+#bottom-right{
+	width: 45%;
+	display: inline-block;
+	margin-left: 3%;
+	vertical-align: top;
 }
 
 .contact{
@@ -250,6 +281,38 @@ footer{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+@media(orientation:portrait){
+	body{
+		background-size: auto 100%;
+	}
+}
+@media(orientation:landscape){
+	body{
+		background-size: 100% auto;
+	}
+}
+@media(min-width: 1920px){
+	.navbar-nav li a{
+		font-size: 26px;
+	}
+	#content-heading h2{
+		font-size: 48px;
+	}
+	.awards p{
+		font-size: 30px;
+	}
+	.contact{
+		height: 600px;
+		font-size: 30px;
+	}
+	#map{
+		height: 100%;
+	}
+	iframe{
+		height: 100%;
+	}
+}
 @media (max-width: 950px){
 	#menu-btn{
 		display: block;
@@ -280,9 +343,6 @@ footer{
 	}
 }
 @media(max-width: 600px){
-	body{
-		background-size: auto 100%;
-	}
 	.thumb-text{
 		font-size: 18px;
 	}
