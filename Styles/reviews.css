@@ -28,6 +28,9 @@
 	color: black;
 	font-size: 24px;	
 }
+h1{
+	color: #530003;
+}
 
 @media (max-width: 950px){
 	.review-dark p, .review-light p{
