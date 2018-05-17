@@ -11,7 +11,7 @@
 
 	  gtag('config', 'UA-112186527-1');
 	</script>
-
+	
 	<title>Big Game | Western Wildlife Creations</title>
 	<meta name="description" content="Large Game taxidermy by Western Wildlife Creations in Cheyenne, WY.">
     <meta name="viewport" content="width=device-width">
@@ -21,7 +21,6 @@
 	<link rel="stylesheet" href="../Magnific-Popup/magnific-popup.css">
     <link rel="stylesheet" href="../../index.css">
     <link rel="stylesheet" href="../Styles/page-style.css">
-    <link rel="stylesheet" href="../Styles/contact-us.css">
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -51,51 +50,25 @@
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="../../index.html" class="hvr-underline-from-center">Home</a>
-			<button class="dropdown-btn hvr-underline-from-center">Big Game<span class="caret"></span>
+			<button class="dropdown-btn hvr-underline-from-center active-mobile">Big Game<span class="caret"></span>
 			</button>
 			<div class="dropdown-container">
 				<a href="north-american.html">North American</a>
-				<a href="exotics.html">African & Exotics</a>
+				<a href="#" class="active-mobile">African & Exotics</a>
 			</div>
+			<!-- <a href="#" class="active-mobile">Big Game</a> -->
 			<a href="small-game.html" class="hvr-underline-from-center">Small Game</a>
 			<a href="upland-game-birds.html" class="hvr-underline-from-center">Upland Game Birds</a>
 			<a href="waterfowl.html" class="hvr-underline-from-center">Waterfowl</a>
 			<a href="reptiles-fish.html" class="hvr-underline-from-center">Reptiles and Fish</a>
 			<a href="reviews.html" class="hvr-underline-from-center">Reviews</a>
-			<a href="#" class="active-mobile">Contact Us</a>
+			<a href="contact-us.html" class="hvr-underline-from-center">Contact Us</a>
 		</div>
-
-		<script>
-			/* Set the width of the side navigation to 250px */
-			function openNav() {
-			    document.getElementById("mySidenav").style.width = "350px";
-			}
-
-			/* Set the width of the side navigation to 0 */
-			function closeNav() {
-			    document.getElementById("mySidenav").style.width = "0";
-			}
-
-			var dropdown = document.getElementsByClassName("dropdown-btn");
-			var i;
-
-			for (i=0; i<dropdown.length; i++){
-				dropdown[i].addEventListener("click", function(){
-					this.classList.toggle("active");
-					var dropdownContent = this.nextElementSibling;
-					if (dropdownContent.style.display === "block"){
-						dropdownContent.style.display = "none";
-					} else {
-						dropdownContent.style.display = "block";
-					}
-				});
-			}
-		</script>
 
 		<div class="navbar">
 			<ul class="nav navbar-nav">
 				<li><a href="../../index.html" class="hvr-underline-from-center">Home</a></li>
-				<li class="dropdown"><a href="#" class="hvr-underline-from-center dropdown-toggle" data-toggle="dropdown">Big Game<span class="caret"></span></a>
+				<li class="active dropdown"><a href="#" class="hvr-underline-from-center dropdown-toggle" data-toggle="dropdown">Big Game<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="north-american.html">North American</a></li>
 						<li><a href="exotics.html">African & Exotics</a></li>
@@ -106,63 +79,22 @@
 				<li><a href="waterfowl.html" class="hvr-underline-from-center">Waterfowl</a></li>
 				<li><a href="reptiles-fish.html" class="hvr-underline-from-center">Reptiles and Fish</a></li>
 				<li><a href="reviews.html" class="hvr-underline-from-center">Reviews</a></li>
-				<li class="active"><a href="#">Contact Us</a></li>
+				<li><a href="contact-us.html" class="hvr-underline-from-center">Contact Us</a></li>
 			</ul>
 			
 		</div>
 	</div>
+		
 
 	<div class="content-wrapper">
-		<div class="contact">
-			<div id="contact-text">
-				<div id="address">
-					<h4>Western Wildlife Creations</h4>
-					<p>5960 Klipstein Road</p>
-					<p>Cheyenne, WY 82009</p>
-					<a href="https://www.google.com/maps/dir//Western+Wildlife+Creations,+5960+Klipstein+Rd,+Cheyenne,+WY+82009/@41.234806,-104.899853,17z/data=!4m15!1m6!3m5!1s0x876f364de0abedb5:0xd2dc585fed8695a1!2sWestern+Wildlife+Creations!8m2!3d41.234806!4d-104.897659!4m7!1m0!1m5!1m1!1s0x876f364de0abedb5:0xd2dc585fed8695a1!2m2!1d-104.897659!2d41.234806" target="_blank"><p id="directions-link">Get Directions &gt<p></a>
-				</div>
-
-				<div id="phone">
-					<h4>Contact Us</h4>
-					<p>Phone: (307) 778-2051</p>
-					<p>Cell: (307) 287-2459</p>
-					<a>Email: david@westernwildlifecreations.com</a>
-				</div>
-			</div>
-			<div id="map">
-				<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJte2r4E02b4cRoZWG7V9Y3NI&key=AIzaSyDrsOFryEtOJLglrwO5muSX0HHP6amMZaw" allowfullscreen></iframe>
-			</div>
+		<div id="content-heading">
+			<h2>Big Game - African & Exotics</h2>
 		</div>
-		<form action="../formmail.php" method="post">
-			<fieldset id="fields">
-				<h1>Contact Us</h1>
-				<input type="hidden" name="recipients" value="david@westernwildlifecreations.com"/>
-				<input type="hidden" name="good_url" value="successfulformsubmission.html"/>
-				<div id="info-div">
-					<p id="place-holder">placeholder</p>
-					<div class="input-div">
-						<label class="name" for="name">Name:</label>
-						<input name="name" placeholder="Name"/>
-					</div>
-					<div class="input-div">
-						<label class="email" for="email">Email:</label>
-						<input name="email" placeholder="example@domain.ext"/>
-					</div>
-					<div class="input-div">
-						<label class="subject" for="subject">Subject:</label>
-						<input name="subject" placeholder="Subject"/>
-					</div>
-				</div>
-				<div id="message-div">
-					<label class="message" for="message">Message:</label>
-					<textarea name="message" placeholder="Type your message here..."></textarea>
-				</div>
-			</fieldset>
-			<fieldset id="buttons">
-				<input class="btn" type="submit" value="Submit"/>
-				<input class="btn" type="reset" value="Clear All"/>
-			</fieldset>
-		</form>
+		<div class="image-thumbs">
+			<img src="../Media/exotics-1.jpg" href="../Media/popups/exotics-1.jpg">
+			<img src="../Media/exotics-2.jpg" href="../Media/popups/exotics-2.jpg">
+			<img src="../Media/exotics-3.jpg" href="../Media/popups/exotics-3.jpg">
+		</div>
 
 		<footer>
 			<div class="footer-body">
@@ -170,8 +102,48 @@
 				<p>&#9743; (307) 778-2051 | <a href="mailto:david@westernwildlifecreations.com">&#9993; david@westernwildlifecreations.com</a></p>
 			</div>
 		</footer>
+
 	</div>
 
+	<script>
 
+		/* Set the width of the side navigation to 250px */
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "350px";
+		}
+
+		/* Set the width of the side navigation to 0 */
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+
+		
+		$('.image-thumbs').each(function() { // the containers for all your galleries
+		    $(this).magnificPopup({
+		        delegate: 'img', // the selector for gallery item
+		        type: 'image',
+		        gallery: {
+		          enabled:true
+		        }
+		    });
+		});
+
+
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i=0; i<dropdown.length; i++){
+			dropdown[i].addEventListener("click", function(){
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block"){
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+	</script>
 </body>
 </html>

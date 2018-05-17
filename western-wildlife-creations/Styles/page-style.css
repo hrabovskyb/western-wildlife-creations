@@ -4,12 +4,12 @@
 
 .content-wrapper{
 	text-align: center;
-	width: 70%;
+	width: 80%;
 }
 
 .image-thumbs img{
 	display: inline-block;
-	width: 25%;
+	width: 20%;
 	margin: 2%;
 	padding: 1%;
 	background-color: #ccc;
@@ -49,6 +49,9 @@ img.mfp-img{
 @media(max-width: 950px){
 	.logo{
 		width: 70%;
+	}
+	.image-thumbs img{
+		width: 25%;
 	}
 }
 @media(max-width: 700px){

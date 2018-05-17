@@ -50,7 +50,12 @@
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="../../index.html" class="hvr-underline-from-center">Home</a>
-			<a href="#" class="active-mobile">Big Game</a>
+			<button class="dropdown-btn hvr-underline-from-center active-mobile">Big Game<span class="caret"></span>
+			</button>
+			<div class="dropdown-container">
+				<a href="#" class="active-mobile">North American</a>
+				<a href="exotics.html">African & Exotics</a>
+			</div>
 			<a href="small-game.html" class="hvr-underline-from-center">Small Game</a>
 			<a href="upland-game-birds.html" class="hvr-underline-from-center">Upland Game Birds</a>
 			<a href="waterfowl.html" class="hvr-underline-from-center">Waterfowl</a>
@@ -62,7 +67,12 @@
 		<div class="navbar">
 			<ul class="nav navbar-nav">
 				<li><a href="../../index.html" class="hvr-underline-from-center">Home</a></li>
-				<li class="active"><a href="#">Big Game</a></li>
+				<li class="active dropdown"><a href="#" class="hvr-underline-from-center dropdown-toggle" data-toggle="dropdown">Big Game<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="north-american.html">North American</a></li>
+						<li><a href="exotics.html">African & Exotics</a></li>
+					</ul>
+				</li>
 				<li><a href="small-game.html" class="hvr-underline-from-center">Small Game</a></li>
 				<li><a href="upland-game-birds.html" class="hvr-underline-from-center">Upland Game Birds</a></li>
 				<li><a href="waterfowl.html" class="hvr-underline-from-center">Waterfowl</a></li>
@@ -77,7 +87,7 @@
 
 	<div class="content-wrapper">
 		<div id="content-heading">
-			<h2>Big Game</h2>
+			<h2>Big Game - North American</h2>
 		</div>
 		<div class="image-thumbs">
 			<img src="../Media/big-game-1.jpg" href="../Media/big-game-1.jpg">
@@ -96,7 +106,6 @@
 			<img src="../Media/big-game-13.jpg" href="../Media/popups/big-game-13.jpg">
 			<img src="../Media/big-game-14.jpg" href="../Media/popups/big-game-14.jpg">
 			<img src="../Media/big-game-17.jpg" href="../Media/popups/big-game-17.jpg">
-			<img src="../Media/big-game-18.jpg" href="../Media/popups/big-game-18.jpg">
 		</div>
 
 		<footer>
@@ -112,7 +121,7 @@
 
 		/* Set the width of the side navigation to 250px */
 		function openNav() {
-		    document.getElementById("mySidenav").style.width = "250px";
+		    document.getElementById("mySidenav").style.width = "350px";
 		}
 
 		/* Set the width of the side navigation to 0 */
@@ -130,6 +139,23 @@
 		        }
 		    });
 		});
+
+
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i=0; i<dropdown.length; i++){
+			dropdown[i].addEventListener("click", function(){
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block"){
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
 	</script>
 </body>
 </html>
