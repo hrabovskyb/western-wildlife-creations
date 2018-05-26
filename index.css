@@ -87,6 +87,7 @@ a:hover{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	
 }
+
 .navbar-nav .active{
 	border-bottom: 4px solid white;
 }
@@ -308,6 +309,7 @@ footer{
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .dropdown-btn{font-size: 18px;}
 }
 
 @media(orientation:portrait){
