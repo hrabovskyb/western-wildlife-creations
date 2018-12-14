@@ -7,19 +7,46 @@
 	width: 80%;
 }
 
-.image-thumbs img{
+.image-thumbs > div{
 	display: inline-block;
 	width: 20%;
 	margin: 2%;
-	padding: 1%;
+	vertical-align: bottom;
 	background-color: #ccc;
 	box-shadow: 5px 5px 15px black;
 	border-radius: 5px;
 	-webkit-transition:.1s;
 }
-.image-thumbs img:hover{
+
+.image-thumbs img{
+	
+	
+	padding: 3%;
+	
+}
+
+
+.image-thumbs > div:hover{
 	box-shadow: 10px 10px 15px black;
 	cursor: pointer;
+}
+
+.lightslider-thumb ul {
+	list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.lightslider-thumb ul li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+.lightslider-thumb ul li img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
 }
 
 
@@ -50,7 +77,7 @@ img.mfp-img{
 	.logo{
 		width: 70%;
 	}
-	.image-thumbs img{
+	.image-thumbs > div{
 		width: 25%;
 	}
 }
@@ -58,7 +85,7 @@ img.mfp-img{
 	.content-wrapper{
 		width: 100%;
 	}
-	.image-thumbs img{
+	.image-thumbs > div{
 		width: 27%;
 	}
 	.modal-dialog{
@@ -70,7 +97,7 @@ img.mfp-img{
 	}
 }
 @media(max-width: 600px){
-	.image-thumbs img{
+	.image-thumbs > div{
 		width: 40%;
 	}
 }
