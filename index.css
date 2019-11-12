@@ -165,11 +165,63 @@ a:hover{
     margin-left: 50px;
 }
 
+.carousel-indicators li, .carousel-indicators .active{
+	width: 30px;
+	height: 3px;
+	margin-right: 3px;
+	margin-left: 3px;
+	cursor: pointer;
+	opacity: .5;
+}
+.carousel-indicators .active {
+	opacity: 1.0;
+}
+.carousel-img {
+	float: left;
+}
+.carousel-control {
+	width: 10%;
+}
+
+.btn-primary {
+	background-color: #520003;
+	color: white;
+	font-weight: bold;
+	border: none;
+	font-size: 11pt;
+}
+
+.btn-primary:hover{
+	background-color: black;
+}
+
+.carousel-caption{
+	padding-bottom: 20px;
+}
+.carousel-inner{
+	box-shadow: 0px 10px 10px 0px;
+	/*margin-bottom: 20px;*/
+}
+
 .content-wrapper{
 	background-color: rgba(255,255,255,.4);
-	width: 60%;
+	width: 100%;
 	margin: auto;
 	margin-top: 5px;
+	max-width: 1140px;
+}
+.home-page-content{
+	background-color: rgba(255,255,255,.4);
+	width: 100%;
+	margin: auto;
+	margin-top: 5px;
+	max-width: 1140px;
+}
+
+.home-page-content img{
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
 }
 
 .content-wrapper img{
@@ -183,7 +235,16 @@ a:hover{
 	font-family: "Times New Roman", Times, serif;
 	font-weight: bolder;
 }
-
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.awards .col-lg-4 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
 .awards{
 	width: 100%;
 	margin:auto;
@@ -193,16 +254,22 @@ a:hover{
 	padding-bottom: 2%;
 }
 .awards img{
+	width: 230px;
+	height: 230px;
 	padding: 1%;
 	background-color: #ccc;
-	border-radius: 5px;
+	/*border: solid 1px #555;*/
+	border-radius: 115px;
 	box-shadow: 0px 0px 20px 5px black;
-	margin-bottom: 8px;
+	/*margin-bottom: 8px;*/
 }
 .awards p{
 	font-weight: bold;
-	color: #520003;
+	color: black;
 	font-size: 14px;
+}
+.awards h2{
+	color: #520003;
 }
 #award-left{
 	display: inline-block;
