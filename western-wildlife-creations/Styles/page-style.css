@@ -49,14 +49,12 @@
     vertical-align: bottom;
 }
 
-
-
 .img-responsive{
 	width: 60% !important;
 }
 
 .mfp-content{
-	width: 60%;
+	width: 55%;
 }
 img.mfp-img{
 	width: auto;

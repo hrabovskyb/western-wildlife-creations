@@ -165,6 +165,13 @@ a:hover{
     margin-left: 50px;
 }
 
+.dropdown-menu{
+	background-color: #520003;
+}
+
+.dropdown-menu > li > a {
+	color: white;
+}
 .carousel-indicators li, .carousel-indicators .active{
 	width: 30px;
 	height: 3px;
@@ -239,7 +246,7 @@ a:hover{
 	margin-right: 0px;
 	margin-left: 0px;
 }
-.awards .col-lg-4 {
+div[class^="col"] {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	padding-left: 15px;
