@@ -172,6 +172,10 @@ a:hover{
 .dropdown-menu > li > a {
 	color: white;
 }
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background: none;
+	color: white;
+}
 .carousel-indicators li, .carousel-indicators .active{
 	width: 30px;
 	height: 3px;
