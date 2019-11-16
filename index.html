@@ -69,32 +69,7 @@
 			<a href="western-wildlife-creations/Pages/contact-us.html" class="hvr-underline-from-center">Contact Us</a>
 		</div>
 
-		<script>
-			/* Set the width of the side navigation to 250px */
-			function openNav() {
-			    document.getElementById("mySidenav").style.width = "350px";
-			}
-
-			/* Set the width of the side navigation to 0 */
-			function closeNav() {
-			    document.getElementById("mySidenav").style.width = "0";
-			}
-
-			var dropdown = document.getElementsByClassName("dropdown-btn");
-			var i;
-
-			for (i=0; i<dropdown.length; i++){
-				dropdown[i].addEventListener("click", function(){
-					this.classList.toggle("active");
-					var dropdownContent = this.nextElementSibling;
-					if (dropdownContent.style.display === "block"){
-						dropdownContent.style.display = "none";
-					} else {
-						dropdownContent.style.display = "block";
-					}
-				});
-			}
-		</script>
+		
 
 		
 
@@ -205,7 +180,7 @@
 				<div class="col-sm-4">
 			        <img src="western-wildlife-creations/Media/award-impala-circle.png">
 			        <h2>Best in Category</h2>
-			        <p>Professional Game Head, 2018 Western Regional Taxidermy Championship.</p>
+			        <p>Professional Game Head, 2018 Wyoming State Taxidermy Championship.</p>
 		      	</div><!-- /.col-lg-4 -->
 		      	<div class="col-sm-4">
 			        <img src="western-wildlife-creations/Media/award-pheasant-circle.png">
@@ -293,6 +268,33 @@
 		</footer>
 
 	<div>
+
+	<script>
+		/* Set the width of the side navigation to 250px */
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "350px";
+		}
+
+		/* Set the width of the side navigation to 0 */
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i=0; i<dropdown.length; i++){
+			dropdown[i].addEventListener("click", function(){
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block"){
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+	</script>
 </body>
 
 </html>
